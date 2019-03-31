@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.3.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.hello.tms</groupId>
+    <artifactId>tms-dev-mock</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>tms-dev-mock</name>
+    <packaging>pom</packaging>
+    <description>Demo project for Spring Boot</description>
+
+    <modules>
+        <module>tms-dev-mock-model</module>
+        <module>tms-dev-mock-dao</module>
+        <module>tms-dev-mock-service</module>
+    </modules>
+
+
+    <properties>
+        <java.version>1.8</java.version>
+        <tms-mock.version>1.0.0-SNAPSHOT</tms-mock.version>
+        <mybatis.version>3.2.8</mybatis.version>
+        <mybatis.spring.version>1.2.2</mybatis.spring.version>
+        <mybatis.paginator.version>1.2.15</mybatis.paginator.version>
+        <mysql.version>5.1.32</mysql.version>
+        <slf4j.version>1.6.4</slf4j.version>
+        <druid.version>1.0.9</druid.version>
+        <dubbo.version>2.5.3</dubbo.version>
+        <dubbo-boot.version>1.0.0</dubbo-boot.version>
+        <zkclient.version>0.1</zkclient.version>
+        <fastjson.version>1.2.49</fastjson.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.hello.tms</groupId>
+                <artifactId>tms-dev-mock-dao</artifactId>
+                <version>${tms-mock.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hello.tms</groupId>
+                <artifactId>tms-dev-mock-model</artifactId>
+                <version>${tms-mock.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.hello.tms</groupId>
+                <artifactId>tms-dev-mock-service</artifactId>
+                <version>${tms-mock.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+            </dependency>
+
+            <dependency>
+                <groupId>io.dubbo.springboot</groupId>
+                <artifactId>spring-boot-starter-dubbo</artifactId>
+                <version>${dubbo-boot.version}</version>
+            </dependency>
+
+            <!--zkClient-->
+            <dependency>
+                <groupId>com.github.sgroschupf</groupId>
+                <artifactId>zkclient</artifactId>
+                <version>${zkclient.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

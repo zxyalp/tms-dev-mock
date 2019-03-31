@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/tms-dev-mock.iml" filepath="$PROJECT_DIR$/tms-dev-mock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tms-dev-mock-dao/tms-dev-mock-dao.iml" filepath="$PROJECT_DIR$/tms-dev-mock-dao/tms-dev-mock-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tms-dev-mock-model/tms-dev-mock-model.iml" filepath="$PROJECT_DIR$/tms-dev-mock-model/tms-dev-mock-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tms-dev-mock-service/tms-dev-mock-service.iml" filepath="$PROJECT_DIR$/tms-dev-mock-service/tms-dev-mock-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tms-dev-mock-web/tms-dev-mock-web.iml" filepath="$PROJECT_DIR$/tms-dev-mock-web/tms-dev-mock-web.iml" />
+    </modules>
+  </component>
+</project>
